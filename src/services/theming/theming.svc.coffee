@@ -82,9 +82,18 @@ angular
       # configuring dashboard settings
       dhbSettings:
         inWidgetsContainer: false
-        showSyncApps: -> true
+        syncApps:
+          show: -> true
+          productDescriptor: 'Impac!'
         currency:
           locked: false
+
+      widgetSettings:
+        histModeChoser:
+          currentLabels:
+            pnl: "Total period"
+            bls: "Live balance"
+            default: "Current"
 
 
     #=======================================

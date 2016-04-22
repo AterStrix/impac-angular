@@ -5,7 +5,7 @@
 
     <div setting-organizations parent-widget="widget" class="part" deferred="::orgDeferred" />
     <div setting-params-picker options="statusOptions" param="status_selection" has-reach="hasReach" parent-widget="widget" class="part" deferred="::paramsPickerDeferred" />
-    <div setting-time-range parent-widget="widget" class="part" deferred="::timeRangeDeferred" />
+    <div setting-time-period parent-widget="widget" class="part" deferred="::timePeriodDeferred" hist-params="widget.metadata.hist_parameters" />
 
     <div class="bottom-buttons" align="right">
       <button class="btn btn-default" ng-click="initSettings()">Cancel</button>
@@ -49,6 +49,7 @@
           </div>
         </div>
       </div>
+
     </div>
 
     <div ng-show="(isDataFound==false)" common-data-not-found widget-engine="::widget.category" />

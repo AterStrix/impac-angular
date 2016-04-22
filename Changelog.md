@@ -1,6 +1,17 @@
 # master | Ongoing development
 
+-------------------------------------------------------------
+# v1.3 | UNTAGGED
+
 ### Adds
+- Params-picker setting selection applicable to all similar widgets
+
+-------------------------------------------------------------
+# v1.3.0 | Better time period selection, accounting behaviours, widgets generator, better dashboard sync...
+
+### Adds
+- Reworked sync-apps UI, statuses & error management: new design & last sync statuses, last sync statuses customizable via ImpacTheming, alerts modal displays successful connector syncs, details & proper error messages for each alert, and a new caution button which opens the alerts modal.
+- Workspace Http Interceptor: applys basic auth intelligently to requests to Maestrano's ecosystem.
 - Widget Generator: generator widget components from the CLI.
 - Gulp Server with live reload for Developer Workspace!
 - [new widget] "Net Sales"
@@ -11,12 +22,18 @@
 - Bump Chart.js from version 2.0.0-beta2
 - Add info panel for widgets
 - Better display for widgets' top-line and action buttons
+- Better time period selection setting (using presets, slider, and dates pickers / financial year handling)
+- P&L and Balance sheet behaviours for some accounting widgets
 
 ### Fixes
+- KPIs display correctly on dashboard change, remove kpi working properly, initializes properly before loading kpis.
 - Better UI for widget name edit (tooltips + can now fully use the mouse without dragging the widget)
 
 -------------------------------------------------------------
 # v1.2 | UNTAGGED
+
+-------------------------------------------------------------
+# v1.2.1 | Developer provider, Gulp refactor, layout fixes, routing fixes, sync fix
 
 ### Fixes
 - Deep routing to dashboards#index when an organization id is specified
@@ -40,6 +57,9 @@
 -------------------------------------------------------------
 # v1.1 | UNTAGGED
 
+-------------------------------------------------------------
+# v1.1.2 | Callbacks, Mass-assignment fix, Currency filter fix
+
 ### Fixes
 - Mass Assign: merges the metadata instead of replacing it + update not pushed if the metadata hasn't changed
 - mno-currency filter: official symbols for 12/14 supported currencies, 'showName' filter argument changed to 'ISOmode', for switching between suffixed ISO code and prefixed currency symbol display.
@@ -62,6 +82,9 @@
 
 -------------------------------------------------------------
 # v1.0 | UNTAGGED
+
+-------------------------------------------------------------
+# v1.0.6 | Dashboard sync fix, line chart layout fix, MYOB custom message
 
 ### Fixes
 - Widget invoices list: guarding against metadata.order_by not specified
